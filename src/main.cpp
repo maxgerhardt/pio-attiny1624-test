@@ -8,6 +8,6 @@ void setup() {
 
 void loop() {
   Serial.println("Hello from USART0!");
-  Serial.println("Hello from USART1!");
+  Serial1.println("Hello from USART1!");
   delay(1000);
 }
