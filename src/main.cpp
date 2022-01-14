@@ -1,4 +1,13 @@
 #include <Arduino.h>
 
-void setup() { }
-void loop() {}
+// test with 2 UART ports
+void setup() {
+  Serial.begin(9600); //USART0
+  Serial1.begin(9600); //USART1
+}
+
+void loop() {
+  Serial.println("Hello from USART0!");
+  Serial.println("Hello from USART1!");
+  delay(1000);
+}
